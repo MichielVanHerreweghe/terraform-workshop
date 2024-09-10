@@ -29,15 +29,12 @@ log_sku = "PerGB2018"
 
 ca_backend_revision_mode = "Single"
 ca_backend_name = "backend"
-ca_backend_image = "mcr.microsoft.com/azure-vote-front"
+ca_backend_image = "crpoabdemone.azurecr.io/backend:latest"
 ca_backend_cpu = 1
 ca_backend_memory = "2Gi"
-
-ca_frontend_revision_mode = "Single"
-ca_frontend_name = "frontend"
-ca_frontend_image = "mcr.microsoft.com/azure-vote-front"
-ca_frontend_cpu = 1
-ca_frontend_memory = "2Gi"
+ca_backend_target_port = 8080
+ca_backend_exposed_port = 8080
+ca_backend_external_enabled = true
 
 kv_sku = "standard"
 

@@ -121,29 +121,19 @@ variable "ca_backend_memory" {
   description = "The memory of the container app"
 }
 
-variable "ca_frontend_revision_mode" {
-  type        = string
-  description = "The revision mode of the container app"
-}
-
-variable "ca_frontend_name" {
-  type        = string
-  description = "The name of the container"
-}
-
-variable "ca_frontend_image" {
-  type        = string
-  description = "The image of the container app"
-}
-
-variable "ca_frontend_cpu" {
+variable "ca_backend_target_port" {
   type        = number
-  description = "The CPU of the container app"
+  description = "The target port of the container app" 
 }
 
-variable "ca_frontend_memory" {
+variable "ca_backend_exposed_port" {
   type        = string
-  description = "The memory of the container app"
+  description = "The exposed port of the container app"
+}
+
+variable "ca_backend_external_enabled" {
+  type = bool
+  description = "Allow traffic from outside of the Container App Environment"
 }
 
 # Key Vault #

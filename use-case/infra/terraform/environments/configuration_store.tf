@@ -42,7 +42,7 @@ resource "azurerm_role_assignment" "appconf_dataowner" {
 
 resource "azurerm_app_configuration_key" "appcs_key_appi_connection" {
   configuration_store_id = azurerm_app_configuration.appcs.id
-  key                    = "ConnectionStrings:ApplicationInsights"
+  key                    = "ApplicationInsights:ConnectionString"
   type                   = "vault"
   vault_key_reference    = azurerm_key_vault_secret.kv_secret_appi_connection.versionless_id
     depends_on = [

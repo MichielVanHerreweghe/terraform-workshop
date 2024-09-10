@@ -12,7 +12,7 @@ resource "azurerm_key_vault" "kv" {
 
 resource "azurerm_key_vault_secret" "kv_secret_appi_connection" {
   key_vault_id = azurerm_key_vault.kv.id
-  name         = "ConnectionStrings--ApplicationInsights"
+  name         = "ApplicationInsights--ConnectionString"
   value        = azurerm_application_insights.appi.connection_string
 }
 
