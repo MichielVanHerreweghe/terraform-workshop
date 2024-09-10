@@ -1,0 +1,5 @@
+resource_group_name  = "rg-management-we"
+storage_account_name = "sttcrkterraformmgmtwe"
+container_name       = "poab-demo-environments"
+key                  = "terraform.tfstate"
+subscription_id      = "2b22d58f-b265-48e2-8341-e0f2afc6610c"
